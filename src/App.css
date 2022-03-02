@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-image: url(/img/hero2.jpg);
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  font-family: "Nunito", sans-serif;
+  color: var(--dark);
+  padding-top: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
+a {
+  color: var(--royal-blue-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  background-color: var(--royal-blue-dark);
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+
+
+input:focus-visible,
+textarea:focus-visible {
+  outline-color: var(--royal-blue-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+
+
+main {
   min-height: 100vh;
+}
+
+textarea {
+  resize: none;
+}
+
+ul > li,
+ol > li {
+  margin-bottom: 0.5rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.cards {
   display: flex;
   flex-direction: column;
+}
+
+.card {
+  background-color: #00519d9d;
+  color: #fff;
+  width: 100%;
+  margin: 2rem auto 0;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 25rem;
+  height: 20rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0.25rem var(--royal-blue-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card * {
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-text {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  background-color: #fffb;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.h1 {
+  position: absolute;
+  right: 9999px;
+}
+
+
+
+.titulo,
+.subtitulo {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-cornflower-blue);
+  text-shadow: 1px 1px 0 var(--dark);
+}
+
+.subtitulo {
+  margin-top: 1.5rem;
+}
+
+
+
+
+@media screen and (min-width: 40rem) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-  to {
-    transform: rotate(360deg);
+
+  .card {
+    width: 45%;
   }
 }
+
+@media screen and (min-width: 48rem) {
+  body {
+    padding-top: 3rem;
+    background-size: cover;
+  }
+}
+

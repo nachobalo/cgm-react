@@ -1,40 +1,36 @@
-.profesional {
-  margin-bottom: 1rem;
+.osociales div {
+  margin-bottom: 0.5rem;
 }
 
-.profesional h4,
-.profesional h5 {
-  margin: 0 0 0.25rem;
-}
-
-#staff {
+#cobertura {
   padding-top: 2rem;
 }
 
 @media screen and (min-width: 30rem) {
- 
-  .profesionales {
+  .osociales {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%;
     overflow-x: scroll;
     max-height: 100vh;
   }
+  .osociales {
+    height: 50vh;
+  }
 
-  .profesionales .profesional {
+  .osociales div {
     padding-right: 1rem;
     width: 50%;
   }
 }
 
 @media screen and (min-width: 40rem) {
-  .profesionales {
+  .osociales {
     max-height: 75vh;
   }
 
-  .profesionales .profesional {
+  .osociales div {
     width: 33.33%;
   }
 }
-
- 

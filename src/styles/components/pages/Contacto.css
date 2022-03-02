@@ -1,0 +1,53 @@
+.formulario,
+.telefonos,
+.email,
+.mapa {
+  background-color: #00519dcc;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group > input[type="text"],
+.input-group > textarea,
+.input-group > input[type="email"] {
+  background-color: #fff; /*Si no se pone en algunos disposituvos el fondo es transparente*/
+  width: 100%;
+  min-height: 2rem;
+}
+
+.mapa iframe {
+  height: 300px;
+  margin-top: 1rem;
+}
+
+.telefonos span,
+.email span {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 40rem) {
+  .contacto .flex {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacto .flex .tel-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contacto .flex > * {
+    width: 45%;
+    max-width: 480px;
+  }
+}

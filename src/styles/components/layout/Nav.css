@@ -1,0 +1,134 @@
+
+
+header {
+  background-color: var(--royal-blue-dark);
+  box-shadow: 0 0.25rem 0.25rem 0 #fff9;
+  color: var(--white);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 2rem;
+  padding-top: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  text-align: center;
+  max-width: 75rem;
+  margin: auto;
+}
+
+.navbar-brand {
+  font-family: "Unica One", "Nunito", sans-serif;
+  font-size: 1.25rem;
+  padding: .75rem;
+  line-height: 2rem;
+  overflow-x: hidden;
+}
+
+.navbar-brand a {
+  color: #fff;
+}
+
+.navbar-menu {
+  position: fixed;
+  width: 12rem;
+  left: -12rem;
+  bottom: 0rem;
+  transition: left 500ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-cornflower-blue);
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.navbar-menu-visible {
+  left: 0;
+}
+
+.navbar-menu li {
+  width: 100%;
+  text-align: center;
+  border-top: thin solid #fff7;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.navbar-menu a:link,
+.navbar-menu a:visited {
+  display: block;
+  padding: 1rem;
+  color: var(--white);
+}
+
+.navbar-menu a:hover,
+.navbar-menu a:active,
+.navbar-menu .active {
+  background-color: var(--royal-blue-dark);
+}
+
+.navbar-toggle {
+  position: fixed;
+  bottom: 3rem;
+  right: 1rem;
+  background-color: var(--royal-blue-dark);
+  border-radius: 50%;
+  padding: 0.5rem;
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 30rem) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar-menu {
+    position: inherit;
+    flex-direction: row;
+    background-color: transparent;
+    width: auto;
+  }
+  .navbar-menu li {
+    border: none;
+  }
+
+  .navbar-menu a:link,
+  .navbar-menu a:visited {
+    padding: 1rem 0.5rem;
+  }
+
+  .navbar-menu a:hover,
+  .navbar-menu .active {
+    background-color: var(--dark-cornflower-blue);
+  }
+  .navbar-brand {
+    padding: 0;
+    line-height: 3rem;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+
+
+}
+

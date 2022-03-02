@@ -1,7 +1,11 @@
 
 import React from 'react'
-import Staff from "./Staff";
-const Servicios = (props) => {
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+import '../styles/components/pages/Servicios.css'
+
+const Servicios = props => {
 
     return (
         <main>
@@ -12,33 +16,31 @@ const Servicios = (props) => {
                 <article className="servicios">
                     <div>
                         <ul>
-                            <li><i className="fas fa-check"></i> Consultorio externo.</li>
+                            <li><FontAwesomeIcon icon={faCheck} /> Consultorio externo.</li>
                             <ul>
                                 <li>Ofrecemos un amplio listado de especialidades y amplia
                                     disponibilidad de días y horarios.</li>
-                                <li>Consulta nuestro staff completo <a href="#staff"><i className="fas fa-arrow-down"></i></a></li>
-                                <li>Podes sacar turnos al 02245 440003 o <a href="#">reservar turno</a> via web</li>
+                                <li>Consulta nuestro <Link to="/staff" >staff</Link> completo</li>
+                                <li>Podes sacar turnos al 02245 440003 o <Link to="/contacto" >Reservar Turno</Link> via web</li>
                             </ul>
-                            <li><i className="fas fa-check"></i> Servicio de ambulancia 24 Hs.</li>
-                            <li><i className="fas fa-check"></i> Servicio de traslados<sup>(*)</sup>.</li>
+                            <li><FontAwesomeIcon icon={faCheck} /> Servicio de ambulancia 24 Hs.</li>
+                            <li><FontAwesomeIcon icon={faCheck} />Servicio de traslados<sup>(*)</sup>.</li>
                             <ul>
                                 <li>Tenemos convenio con UDEM.</li>
                                 <li>Derivacion sin cargo a centros para internacion.</li>
                                 <li>Derivacion a centros de mayor complejidad.</li>
                             </ul>
-                            <li><i className="fas fa-check"></i> Enfermeria a domicilio.</li>
-                            <li><i className="fas fa-check"></i> Servicio de ortopedia<sup>(*)</sup>.</li>
+                            <li><FontAwesomeIcon icon={faCheck} /> Enfermeria a domicilio.</li>
+                            <li><FontAwesomeIcon icon={faCheck} />Servicio de ortopedia<sup>(*)</sup>.</li>
                         </ul>
                         <p><small>*Servicio exclusivo para socios</small></p>
                     </div>
 
                     <aside>
-
-                        <a href="#">Me gusta <br /> <i className="fas fa-thumbs-up fa-3x"></i> <br /> Ver Planes</a>
-
+                        <Link to="/planes" >Me gusta <br /> <FontAwesomeIcon icon={faThumbsUp} /> <br /> Ver Planes</Link>
                     </aside>
                 </article>
-                <Staff />
+             
             </section>
         </main>
     );

@@ -1,0 +1,36 @@
+ 
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .home .home-aside {
+    background-color: #fff5;
+    color: var(--royal-blue-dark);
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  
+  
+  @media screen and (min-width: 40rem) {
+    
+    .home {
+      flex-direction: row-reverse;
+    }
+  
+    .home > * {
+      width: 50%;
+    }
+  
+    .home .home-main {
+      padding-right: 1rem;
+    }
+  
+ 
+  }
+
+  

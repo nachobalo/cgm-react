@@ -1,0 +1,51 @@
+.fa-check {
+  color: var(--royal-blue-dark);
+}
+
+
+ul > li,
+ol > li {
+  margin-bottom: 0.5rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.servicios p {
+  text-align: end;
+  font-weight: 600;
+}
+
+.servicios aside {
+  display: none;
+  background-color: var(--usafa-blue);
+  height: 200px;
+  width: 200px;
+  padding: 1.5rem;
+  margin: auto;
+  border-radius: 1rem;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.25rem;
+}
+
+.servicios aside a {
+  color: #fff9;
+}
+
+@media screen and (min-width: 48rem) {
+  .servicios {
+    display: flex;
+    justify-content: space-between;
+  }
+  .servicios aside {
+    display: block;
+  }
+
+  .servicios div {
+    padding-right: 2rem;
+    max-width: 48rem;
+  }
+}
