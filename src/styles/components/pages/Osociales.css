@@ -19,7 +19,7 @@
     height: 50vh;
   }
 
-  .osociales div {
+  .osociales .osocial {
     padding-right: 1rem;
     width: 50%;
   }
@@ -30,7 +30,7 @@
     max-height: 75vh;
   }
 
-  .osociales div {
+  .osociales .osocial {
     width: 33.33%;
   }
 }

@@ -35,7 +35,7 @@ const Staff = (props) => {
                     {
                     loading
                         ? <Loader />
-                        : profesionales.map((prof) => <Profesional key={prof.nombre}profesional={prof} />)
+                        : profesionales.map((prof) => <Profesional key={prof.id} profesional={prof} />)
                 }
                 </div>
             </section>

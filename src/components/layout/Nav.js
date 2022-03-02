@@ -26,7 +26,7 @@ const Nav = () => {
                     <li><NavLink className="navbar-lInk" to="/cobertura">Cobertura</NavLink></li>
                     <li><NavLink className="navbar-lInk" to="/staff">Cartilla Medica</NavLink></li>
                     <li><NavLink className="navbar-lInk" to="/servicios">Servicios</NavLink></li>
-                    <li><NavLink className="navbar-lInk" to="/Contacto">Contacto</NavLink></li>
+                    <li><NavLink className="navbar-lInk" to="/contacto">Contacto</NavLink></li>
                 </ul>
 
             </nav>

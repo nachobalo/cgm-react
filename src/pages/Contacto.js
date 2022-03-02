@@ -3,16 +3,12 @@ import axios from 'axios'
 import Loader from '../components/layout/Loader';
 import '../styles/components/pages/Contacto.css';
 
-
-
-
 const initForm = {
     nombre: '',
     email: '',
     telefono: '',
     mensaje: ''
 }
-
 
 const Contacto = (props) => {
 

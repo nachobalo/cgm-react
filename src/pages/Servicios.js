@@ -37,7 +37,7 @@ const Servicios = props => {
                     </div>
 
                     <aside>
-                        <Link to="/planes" >Me gusta <br /> <FontAwesomeIcon icon={faThumbsUp} /> <br /> Ver Planes</Link>
+                        <Link to="/planes" >Me gusta <br /> <FontAwesomeIcon icon={faThumbsUp} size="2x" /> <br /> Ver Planes</Link>
                     </aside>
                 </article>
              
